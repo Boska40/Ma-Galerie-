@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="IMG_0074_Original.JPG"/>
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>My Galery</title>
+</head>
+<body>
+    
+    <div class="content">
+       
+        <!-- Créer des Onglets -->
+        <div class="tab">
+            <button class="tablinks" onclick="openOnglet(event, 'onlyme')">ONLY ME</button>
+            <button class="tablinks" onclick="openOnglet(event, 'family')">FAMILY</button>
+            <button class="tablinks" onclick="openOnglet(event, 'friends')">FRIENDS</button>
+            <button class="tablinks" onclick="openOnglet(event, 'enjoy')">ENJOY</button>
+            <button class="tablinks" onclick="openOnglet(event, 'contact')">CONTACT</button>
+            <i class="bx bx-menu" id="menu" onclick="menuDrop()"></i>
+        </div>
+
+        <!-- barre de menu verticale -->
+        <div class="dropMenu" id="dropMenu">
+            <i class="bx bx-x-circle" id="close" onclick="menuClose()"></i>
+            <button class="tablinks" onclick="openOnglet(event, 'onlyme')" id="only">ONLY ME</button>
+            <button class="tablinks" onclick="openOnglet(event, 'family')">FAMILY</button>
+            <button class="tablinks" onclick="openOnglet(event, 'friends')">FRIENDS</button>
+            <button class="tablinks" onclick="openOnglet(event, 'enjoy')">ENJOY</button>
+            <button class="tablinks" onclick="openOnglet(event, 'contact')">CONTACT</button>
+        </div>
+
+        <!-- Blocs de données -->
+        <div class="tabcontent" id="onlyme">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="IMG/me/OLD (56).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (99).JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/ariel (12).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/family (6).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/enfants (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/kash (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                       <img src="IMG/friends/claude (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/joyce (5).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (2).jpg" alt="">
+                    </div>
+                    <!-- doublement du sldide -->
+                    <div class="slide">
+                        <img src="IMG/friends/ada (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/octavia (4).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/FO (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (9).jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/bertrand (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/Michel (11).JPG" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+                <img src="IMG/me/NEW (2).jpg" alt="">
+                <img src="IMG/me/OLD (56).jpg" alt="">
+                <video src="IMG/me/VIDEO (40).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (20).jpg" alt="">
+                <img src="IMG/me/NEW (41).jpg" alt="">
+                <img src="IMG/me/NEW (28).jpg" alt="">
+                <video src="IMG/me/VIDEO (15).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (107).jpg" alt="">
+                <img src="IMG/me/NEW (49).jpg" alt="">
+                <img src="IMG/me/NEW (58).jpg" alt="">
+                <video src="IMG/me/VIDEO (35).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (72).jpg" alt="">
+                <img src="IMG/me/NEW (79).jpg" alt="">
+                <img src="IMG/me/NEW (84).jpg" alt="">
+                <img src="IMG/me/NEW (86).jpg" alt="">
+                <video src="IMG/me/VIDEO (11).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (87).jpg" alt="">
+                <img src="IMG/me/NEW (91).jpg" alt="">
+                <img src="IMG/me/NEW (97).jpg" alt="">
+                <video src="IMG/me/VIDEO (31).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (99).jpg" alt="">
+                <img src="IMG/me/NEW (26).jpg" alt="">
+                <video src="IMG/me/VIDEO (34).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (129).jpg" alt="">
+                <img src="IMG/me/NEW (133).jpg" alt="">
+                <video src="IMG/me/VIDEO (36).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW (135).jpg" alt="">
+                <video src="IMG/me/VIDEO (12).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/NEW.jpg" alt="">
+                <img src="IMG/me/OLD (9).jpg" alt="">
+                <img src="IMG/me/OLD (24).jpg" alt="">
+                <video src="IMG/me/VIDEO (16).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/OLD (26).jpg" alt="">
+                <img src="IMG/me/OLD (36).jpg" alt="">
+                <video src="IMG/me/VIDEO (48).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/OLD (37).jpg" alt="">
+                <img src="IMG/me/OLD (41).jpg" alt="">
+                <video src="IMG/me/VIDEO (24).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/OLD (42).jpg" alt="">
+                <img src="IMG/me/OLD (47).jpg" alt="">
+                <video src="IMG/me/VIDEO (25).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/OLD (49).jpg" alt="">
+                <img src="IMG/me/OLD (55).jpg" alt="">
+                <img src="IMG/me/OLD (52).jpg" alt="">
+                <video src="IMG/me/VIDEO (39).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/me/OLD (56).jpg" alt="">
+                <video src="IMG/me/VIDEO (6).mp4" playsinline autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="tabcontent" id="family">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="IMG/me/OLD (56).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (99).JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/ariel (12).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/family (6).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/enfants (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/kash (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                       <img src="IMG/friends/claude (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/joyce (5).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (2).jpg" alt="">
+                    </div>
+                    <!-- doublement du sldide -->
+                    <div class="slide">
+                        <img src="IMG/friends/ada (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/octavia (4).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/FO (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (9).jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/bertrand (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/Michel (11).JPG" alt="">
+                    </div>
+                </div>
+            </div>           
+            <div class="images">
+                <img src="IMG/family/6b897e4d-1261-4d94-9a63-1a3ed0544077.jpg" alt="">
+                <img src="IMG/family/djamel (1).jpg" alt="">
+                <img src="IMG/family/djamel (2).jpg" alt="">
+                <img src="IMG/family/enfants (1).jpg" alt="">
+                <img src="IMG/family/octavia (5).jpg" alt="">
+                <img src="IMG/family/family (5).jpg" alt="">
+                <img src="IMG/family/family (6).jpg" alt="">
+                <img src="IMG/family/family (7).jpg" alt="">
+                <img src="IMG/family/mbom (2).jpg" alt="">
+                <img src="IMG/family/family (8).jpg" alt="">
+                <img src="IMG/family/family (9).jpg" alt="">
+                <img src="IMG/family/enfants (4).jpg" alt="">
+                <img src="IMG/family/enfants (2).jpg" alt="">
+                <img src="IMG/family/enfants (5).jpg" alt="">
+                <img src="IMG/family/enfants (6).jpg" alt="">
+                <img src="IMG/family/enfants (7).jpg" alt="">
+                <img src="IMG/family/family (1).jpg" alt="">
+                <img src="IMG/family/pater (2).jpeg" alt="">
+                <img src="IMG/family/pater (2).jpg" alt="">
+                <img src="IMG/family/family (3).jpg" alt="">
+                <img src="IMG/family/enfants (3).jpg" alt="">
+                <img src="IMG/family/family (4).jpg" alt="">
+                <img src="IMG/family/Kristy (1).jpg" alt="">
+                <img src="IMG/family/mbom (3).jpg" alt="">
+                <img src="IMG/family/octavia (1).jpg" alt="">
+                <img src="IMG/family/octavia (2).jpg" alt="">
+                <img src="IMG/family/octavia (3).jpg" alt="">
+                <img src="IMG/family/octavia (4).jpg" alt="">
+                <img src="IMG/family/family (10).jpg" alt="">
+                <img src="IMG/family/mbom (1).jpg" alt="">
+                <img src="IMG/family/octavia (10).jpg" alt="">
+                <img src="IMG/family/pater (1).jpeg" alt="">
+                <img src="IMG/family/pater (1).jpg" alt="">
+                <img src="IMG/family/family (11).jpg" alt="">
+                <img src="IMG/family/family (12).jpg" alt="">
+                <img src="IMG/family/octavia (6).jpg" alt="">
+                <img src="IMG/family/octavia (7).jpg" alt="">
+                <img src="IMG/family/Kristy (2).jpg" alt="">
+                <img src="IMG/family/family (14).jpg" alt="">
+                <img src="IMG/family/family (15).jpg" alt="">
+                <img src="IMG/family/FO (1).jpg" alt="">
+                <img src="IMG/family/FO (2).jpg" alt="">
+                <video src="IMG/family/Kristy (1).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/family/Kristy (3).jpg" alt="">
+                <img src="IMG/family/octavia (8).jpg" alt="">
+                <img src="IMG/family/octavia (9).jpg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="friends">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="IMG/me/OLD (56).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (99).JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/ariel (12).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/family (6).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/enfants (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/kash (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                       <img src="IMG/friends/claude (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/joyce (5).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (2).jpg" alt="">
+                    </div>
+                    <!-- doublement du sldide -->
+                    <div class="slide">
+                        <img src="IMG/friends/ada (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/octavia (4).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/FO (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (9).jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/bertrand (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/Michel (11).JPG" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+                <img src="IMG/friends/ada (10).jpg" alt="">
+                <img src="IMG/friends/ADA (4).jpg" alt="">
+                <img src="IMG/friends/ariel (12).jpg" alt="">
+                <img src="IMG/friends/ariel (14).jpg" alt="">
+                <img src="IMG/friends/atsia (1).jpg" alt="">
+                <img src="IMG/friends/claude (1).jpg" alt="">
+                <img src="IMG/friends/claude (2).jpg" alt="">
+                <img src="IMG/friends/claude (3).jpg" alt="">
+                <img src="IMG/friends/ariel (2).jpg" alt="">
+                <img src="IMG/friends/claude (13).jpg" alt="">
+                <img src="IMG/friends/ada (11).jpg" alt="">
+                <img src="IMG/friends/school (5).jpg" alt="">
+                <img src="IMG/friends/ADA (3).jpg" alt="">
+                <img src="IMG/friends/claude (14).jpg" alt="">
+                <img src="IMG/friends/claude (19).jpg" alt="">
+                <img src="IMG/friends/ariel (3).jpg" alt="">
+                <img src="IMG/friends/daishi (6).jpg" alt="">
+                <img src="IMG/friends/daishi.jpg" alt="">
+                <img src="IMG/friends/claude (22).jpg" alt="">
+                <img src="IMG/friends/claude (24).jpg" alt="">
+                <video src="IMG/friends/atsia (10).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/friends/kash (1).jpg" alt="">
+                <img src="IMG/friends/kash (2).jpg" alt="">
+                <img src="IMG/friends/claude (25).jpg" alt="">
+                <img src="IMG/friends/claude (27).jpg" alt="">
+                <img src="IMG/friends/atsia (5).jpg" alt="">
+                <img src="IMG/friends/claude (6).jpg" alt="">
+                <img src="IMG/friends/claude (16).jpg" alt="">
+                <img src="IMG/friends/claude.jpg" alt="">
+                <img src="IMG/friends/ADA (7).jpg" alt="">
+                <img src="IMG/friends/daishi (3).jpg" alt="">
+                <img src="IMG/friends/ariel (17).jpg" alt="">
+                <img src="IMG/friends/ariel (18).jpg" alt="">
+                <img src="IMG/friends/daishi (4).jpg" alt="">
+                <img src="IMG/friends/Michel (11).jpg" alt="">
+                <img src="IMG/friends/Michel (13).jpg" alt="">
+                <img src="IMG/friends/joyce (1).jpg" alt="">
+                <img src="IMG/friends/joyce (5).jpg" alt="">
+                <img src="IMG/friends/joyce (2).jpg" alt="">
+                <img src="IMG/friends/joyce (3).jpg" alt="">
+                <img src="IMG/friends/joyce (4).jpg" alt="">
+                <img src="IMG/friends/joyce (6).jpg" alt="">
+                <video src="IMG/friends/atsia (7).mp4" playsinline autoplay muted loop></video>
+                <img src="IMG/friends/manue (1).jpg" alt="">
+                <img src="IMG/friends/daishi (1).jpg" alt="">
+                <img src="IMG/friends/manue (2).jpg" alt="">
+                <img src="IMG/friends/maxim.jpg" alt="">
+                <img src="IMG/friends/Michel (1).jpg" alt="">
+                <img src="IMG/friends/ariel (16).jpg" alt="">
+                <img src="IMG/friends/Michel (5).jpg" alt="">
+                <img src="IMG/friends/Michel (6).jpg" alt="">
+                <img src="IMG/friends/school (6).jpg" alt="">
+            </div>
+        </div>
+        <div class="tabcontent" id="enjoy">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="IMG/me/OLD (56).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (99).JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/ariel (12).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/family (6).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/enfants (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/kash (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                       <img src="IMG/friends/claude (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/joyce (5).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/me/NEW (2).jpg" alt="">
+                    </div>
+                    <!-- doublement du sldide -->
+                    <div class="slide">
+                        <img src="IMG/friends/ada (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/octavia (4).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/family/FO (2).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (9).jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/bertrand (1).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="IMG/friends/Michel (11).JPG" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+               <img src="IMG/enjoy/enjoy (1).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (15).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (2).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (3).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (8).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (10).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (12).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (4).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (13).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (23).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (24).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (11).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (25).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (26).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (10).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (27).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (28).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (16).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (29).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (3).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (14).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (12).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (15).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (16).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (7).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (19).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (6).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (20).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (21).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (2).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (22).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (4).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (5).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (5).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (6).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (9).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (7).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (8).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (14).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (9).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (30).jpg" alt="">
+               <video src="IMG/enjoy/vid-enjoy (13).mp4" playsinline autoplay muted loop></video>
+               <img src="IMG/enjoy/enjoy (31).jpg" alt="">
+               <img src="IMG/enjoy/enjoy (32).jpg" alt="">
+                <video src="IMG/enjoy/vid-enjoy (1).mp4" playsinline autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="tabcontent" id="contact">
+                <h2>Contact me </h2>
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="IMG/me/OLD (56).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/me/NEW (99).JPG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/friends/ariel (12).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/family/family (6).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/family/enfants (2).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/friends/kash (2).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                           <img src="IMG/friends/claude (1).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/friends/joyce (5).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/me/NEW (2).jpg" alt="">
+                        </div>
+                        <!-- doublement du sldide -->
+                        <div class="slide">
+                            <img src="IMG/friends/ada (11).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/family/octavia (4).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/family/FO (2).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/enjoy/enjoy (11).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/enjoy/enjoy (17).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/enjoy/enjoy (9).jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/friends/bertrand (1).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/enjoy/enjoy (18).jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG/friends/Michel (11).JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container contact-container">
+                    <a href="https://wa.me/+237656531016"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="mailto:stephaneboska@gmail.com"><i class="bx bx-envelope"></i></a>
+                    <a href="https://t.me/stephaneboska40"><i class="bx bxl-telegram"></i></a>
+                </div>
+        </div>
+    </div> 
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
